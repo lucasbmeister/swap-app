@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline' 'unsafe-eval';"
+    />
+    <title>Sticker Swap</title>
+    <script src="./index.js"></script>
+    <script src="./scripts/html2canvas.min.js"></script>
+  </head>
+  <body  style="background: grey;">
+    <div id="login-container">
+      <label for="token">Token</label>
+      <input type="password" id="token" />
+      <button id="login-button">Login</button>
+    </div>
+    <div id="sticker-container" >
+      <button id="save-button" style="position: absolute; top: 10px; left: 10px">Salvar</button>
+      <button id="refresh-button" style="position: absolute; top: 10px; left: 90px">Atualizar</button>
+      <button id="logout-button" style="position: absolute; top: 10px; left: 190px">Sair</button>
+      <div id="stickers" style="position: absolute; top: 30px; background: grey;"></div>
+    </div>
+  </body>
+</html>
